@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 mongoose
   .connect(
-    "mongodb+srv://inhwa:258963@login.carxr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongodb+srv://inhwa:123456@login.carxr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
   )
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
