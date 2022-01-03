@@ -4,6 +4,8 @@ const port = 5000;
 const bodtParser = require("body-parser");
 const { User } = require("./models/User");
 const mongoose = require("mongoose");
+// 비밀 설정 정보 관리
+const config = require('./config/key');
 
 //application/x-www-form-urlencoded
 app.use(express.json());
@@ -11,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 mongoose
   .connect(
-    "mongodb+srv://inhwa:123456@login.carxr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    config.mongoURI
   )
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
