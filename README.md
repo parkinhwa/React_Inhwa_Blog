@@ -15,3 +15,7 @@
   - Bcrypt 설치
   - index.js에 register코드에 가서 save하기전 비밀번호 암호화
   - User.js에 비밀번호 암호화 함수 추가
+
+- 로그인 시 필요한 라이브러리
+  - DB에 저장된 이메일과 비밀번호가 입력한 값과 같다면 토큰을 생성한다.
+  - 토큰 생성을 위해 필요한 JSONWEBTOKEN 라이브러리 다운 => npm install jsonwebtoken --save 
