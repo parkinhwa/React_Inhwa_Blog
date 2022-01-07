@@ -3,15 +3,15 @@ const app = express();
 const port = 5000;
 const cookieParser = require("cookie-parser");
 const { User } = require("./models/User");
-const { auth } = require('./middleware/auth')
+const { auth } = require("./middleware/auth");
 const mongoose = require("mongoose");
 // 비밀 설정 정보 관리
 const config = require("./config/key");
 
-
 //application/x-www-form-urlencoded
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 mongoose
   .connect(config.mongoURI)
@@ -59,28 +59,27 @@ app.post("/login", (req, res) => {
   });
 });
 
-app.get('/api/users/auth', auth, (req, res) => {
+app.get("/api/users/auth", auth, (req, res) => {
   // 여기까지 미들웨어를 통과해왔다는 얘기는 Authentication이 True라는 말
   res.status(200).json({
     _id: req.user.id,
-    isAdmin:req.user.role === 0 ? false : true,
+    isAdmin: req.user.role === 0 ? false : true,
     isAuth: true,
     email: req.user.email,
     name: req.user.name,
     lastname: req.user.lastname,
     role: req.user.role,
-    image: req.user.image
-  })
-})
-app.get('/api/users/logout', auth, (res, req) => {
-  User.findOneAndUpdate({_id: req.user._id}, 
-    {token:""}
-      , (err, user) => {
-        if(err) return res.json({success:false, err})
-        return res.status(200).send({
-          success:true
-        })
-    })
-})  
+    image: req.user.image,
+  });
+});
+app.get("/api/users/logout", auth, (req, res) => {
+  // console.log('req.user', req.user)
+  User.findOneAndUpdate({ _id: req.user._id }, { token: "" }, (err, user) => {
+    if (err) return res.json({ success: false, err });
+    return res.status(200).send({
+      success: true,
+    });
+  });
+});
 app.get("/", (req, res) => res.send("Hello World!"));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
