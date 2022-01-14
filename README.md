@@ -25,6 +25,9 @@
   - Library이다. 기능들을 컴포넌트화 시킬 수 있다.
   - Virtual DOM (여러개에 리스트 중 한가지만 Update할 때 전체 리스트를 reload하는 것이 아닌 바뀐 한가지만 DOM에서 바꿔준다.)
   - 어떻게 Virtual DOM이 한가지만 Update 할 수 있을까?
-    - 1. JSX을 렌더링한다. 그럼 Virtual DOM이 Update가 된다.
-    - 2. Virtual DOM이 이전 virtual DOM에서 찍어둔 Snapshot과 비교를 해서 바뀐 부분을 찾는다.(== diffing)
-    - 3. 그 바뀐 부분만 Real DOM에서 바꿔준다.
+    - JSX을 렌더링한다. 그럼 Virtual DOM이 Update가 된다.
+    - Virtual DOM이 이전 virtual DOM에서 찍어둔 Snapshot과 비교를 해서 바뀐 부분을 찾는다.(== diffing)
+    - 그 바뀐 부분만 Real DOM에서 바꿔준다.
+  - 페이지 이동을 위해 Router사용
+    - npm install react-router-dom --save
+    - Router node v.6부터 Switch => Routes로 
