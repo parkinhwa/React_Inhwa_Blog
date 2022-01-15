@@ -81,5 +81,9 @@ app.get("/api/users/logout", auth, (req, res) => {
     });
   });
 });
+
+app.get("/api/hello", (req, res) => {
+  res.send("안녕하세요");
+});
 app.get("/", (req, res) => res.send("Hello World!"));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
