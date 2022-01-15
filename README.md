@@ -37,5 +37,9 @@
     
     - 서로 다른 두개의 포트를 가지고 있는 서버는 아무 설정없이 Request를 보낼 수 없다. => 보안을 위한 Cors(Cross-Origin Resource Sharing) 정책 때문
     - 그래서 이렇게 포트가 다를 경우에는 Proxy를 이용하여 해결한다. 
+  
+  - Concurrently를 사용하여 백서버와 프론트서버 한번에 키기
+    - npm install concurrently --save
+    - package.json => "명령어 이름": "concurrently \"명령어\" \"명령어 --prefix \""
 
   
