@@ -42,4 +42,18 @@
     - npm install concurrently --save
     - package.json => "명령어 이름": "concurrently \"명령어\" \"명령어 --prefix \""
 
+- Redux
+  - Redux는 state 관리 라이브러리
+  - React에는 Props와 State가 있음
+  - Props는 컴포넌트 간 뭔가 주고받을때 사용, 소통하는 방법이 부모에서 자식으로만 가능, 자식에서 받은 값은 변경할 수 없음(부모에서 변경해야함)
+  - State는 부모가 자식에게 주는 것이 아닌 컴포넌트 안에서 데이터를 전달할 때 사용, State가 변하면 re-render된다.
+
+    ![image](https://user-images.githubusercontent.com/65644486/149655471-b65e13f5-e2b1-4cc3-83ad-6e249c5d3c06.png)
+    
+  - Redux Data flow
+  
+    ![image](https://user-images.githubusercontent.com/65644486/149655624-d6668fae-efb9-49b1-b403-e57c70e34502.png)
+
+
+
   
