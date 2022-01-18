@@ -34,10 +34,10 @@ function LoginPage(props) {
       password: Password,
     };
 
-    dispatch(loginUser(body)).then((response) => {
-      console.log(`login success: ${response.body}`);
-      if (response.payload.loginSuccess) {
-        props.history.push("/");
+    dispatch(loginUser(body)).then((res) => {
+      console.log(`login success: ${res.body}`);
+      if (res.payload.loginSuccess) {
+        navigate("/");
       } else {
         alert("Error");
       }
