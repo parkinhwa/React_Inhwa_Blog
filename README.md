@@ -41,6 +41,16 @@
   - Concurrently를 사용하여 백서버와 프론트서버 한번에 키기
     - npm install concurrently --save
     - package.json => "명령어 이름": "concurrently \"명령어\" \"명령어 --prefix \""
+  
+  - React vs React Hooks
+  
+    ![image](https://user-images.githubusercontent.com/65644486/149721392-f2896a96-41b4-4064-b84d-9bea3b7ab977.png)
+    
+    - this.state = {name:""} => const [Name, setName] = useState("")
+    - componentDidMount() => useEffect()
+    
+    
+
 
 - Redux
   - Redux는 state 관리 라이브러리
