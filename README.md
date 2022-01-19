@@ -33,7 +33,7 @@
     - Router node v.6부터 Switch => Routes로 
   - Data Request, Response Flow 그리고 Axios
   
-    ![image](https://user-images.githubusercontent.com/65644486/149608586-855ee39b-5ae8-43a5-9866-ab33b11ddda4.png)
+    ![image](https://user-images.githubusercontent.com/65644486/149908824-2ad24e50-b028-44f6-98fc-07c080ec4ed9.png)
     
     - 서로 다른 두개의 포트를 가지고 있는 서버는 아무 설정없이 Request를 보낼 수 없다. => 보안을 위한 Cors(Cross-Origin Resource Sharing) 정책 때문
     - 그래서 이렇게 포트가 다를 경우에는 Proxy를 이용하여 해결한다. 
@@ -44,8 +44,11 @@
   
   - React vs React Hooks
   
-    ![image](https://user-images.githubusercontent.com/65644486/149721392-f2896a96-41b4-4064-b84d-9bea3b7ab977.png)
+    ![image](https://user-images.githubusercontent.com/65644486/149908955-f4f80fc0-6606-4f57-96bd-4ec2dfa10fcd.png)
+
     
+    ![image](https://user-images.githubusercontent.com/65644486/149909015-1da290db-dcb4-4ef7-bab6-a5ca751327b0.png)
+
     - this.state = {name:""} => const [Name, setName] = useState("")
     - componentDidMount() => useEffect()
     
@@ -58,7 +61,8 @@
   - Props는 컴포넌트 간 뭔가 주고받을때 사용, 소통하는 방법이 부모에서 자식으로만 가능, 자식에서 받은 값은 변경할 수 없음(부모에서 변경해야함)
   - State는 부모가 자식에게 주는 것이 아닌 컴포넌트 안에서 데이터를 전달할 때 사용, State가 변하면 re-render된다.
 
-    ![image](https://user-images.githubusercontent.com/65644486/149655471-b65e13f5-e2b1-4cc3-83ad-6e249c5d3c06.png)
+    ![image](https://user-images.githubusercontent.com/65644486/149909219-d9febf19-027c-4027-ad88-8959da398551.png)
+
     
   - Redux Data flow
   
