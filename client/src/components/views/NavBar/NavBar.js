@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../../../css/NavBar.css";
+import * as bootstrap from "bootstrap";
 
 function NavBar() {
   const navigate = useNavigate();
@@ -18,27 +19,32 @@ function NavBar() {
 
   return (
     <div class="menu_bar">
-      <ul class="menu">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Board</a>
-        </li>
-        {/* <button>Login</button>
-           <button>Sign Up</button> */}
-        <button onClick={onClickHandler}>Logout</button>
-        <input type="checkbox" id="trigger"></input>
-        <label for="trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <div class="sidebar"></div>
-      </ul>
+      <input type="checkbox" id="trigger"></input>
+      <label for="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="sidebar">
+        <ul class="menu">
+          <span class="name">Inhwa Park</span>
+          <span class="profile"></span>
+          <span class="content">Hi, I'm Inhwa and I'm a front-end developer. Welcome to my homepage!</span>
+          <hr></hr>
+          <li class="menu_item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="menu_item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="menu_item">
+            <a href="#">About Me</a>
+          </li>
+          {/* <button onClick={onClickHandler}>Logout</button> */}
+          <button>Login</button>
+           <button>Sign Up</button>
+        </ul>
+      </div>
     </div>
   );
 }

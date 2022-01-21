@@ -19,11 +19,11 @@ function LadingPage() {
       <div>
         <NavBar />
       </div>
-      <div class="title">
+      {/* <div class="title">
         <h1 class="title_text">Inhwa's Blog</h1>
         <h1 class="title_text">Inhwa's Blog</h1>
         <h4 class="title_content">안녕하세요 박인화 블로그롱가링가링입니다.</h4>
-      </div>
+      </div> */}
     </div>
   );
 }
