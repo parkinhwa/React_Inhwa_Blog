@@ -1,0 +1,93 @@
+.registerpage {
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #222;;
+}
+
+.register {
+    width: 800px;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.register span {
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+}
+.register input[type=email],
+.register input[type=password],
+.register input[type=name],
+.register input[type=conpassword] {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 40px
+}
+
+.register p {
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.register p label {
+    float: left;
+}
+.register p a {
+    float: right;
+}
+.register p a:hover {
+    text-decoration: underline;
+}
+.register button {
+    background-color: black;
+    color: #fff;
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+}
+.register button:hover {
+    background-color: #2c778e;
+}
+.register input[type=email]:hover,
+.register input[type=password]:hover,
+.register input[type=name]:hover,
+.register input[type=conpassword]:hover{
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+.register input[type=email]{
+    background: #fff url(../img/icon-email.png) no-repeat center left 10px;
+}
+.register input[type=name]{
+    background: #fff url(../img/icon-name.png) no-repeat center left 10px;
+}
+.register input[type=password]{
+    background: #fff url(../img/icon-lock.png) no-repeat center left 10px;
+}
+.register input[type=conpassword]{
+    background: #fff url(../img/icon-confirm.png) no-repeat center left 10px;
+}
+
+.register input[type=email]:focus::placeholder,
+.register input[type=password]:focus::placeholder,
+.register input[type=name]:focus::placeholder,
+.register input[type=conpassword]:focus::placeholder {
+    visibility: hidden;
+}
