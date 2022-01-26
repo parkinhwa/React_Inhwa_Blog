@@ -9,7 +9,6 @@ import promiseMiddleware from "redux-promise";
 import ReduxThunk from "redux-thunk";
 import Reducer from "./_reducer";
 
-// 스토어 생성
 const createStoreWithMiddleware = applyMiddleware(
   promiseMiddleware,
   ReduxThunk
@@ -25,5 +24,14 @@ ReactDOM.render(
   >
     <App />
   </Provider>,
+// const middleware = applyMiddleware(thunkMiddleware);
+// const store = createStore(Reducer, composeWithDevTools(middleware));
+
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </Provider>,
   document.getElementById("root")
 );

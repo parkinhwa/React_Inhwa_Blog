@@ -2,8 +2,12 @@ import axios from "axios";
 import {
   LOGIN_USER,
   REGISTER_USER,
-  AUTH_USER, 
+  AUTH_USER,
+  ADD_POSTING,
+  EDIT_POSTING,
+  DELETE_POSTING,
 } from "./types";
+
 
 export function loginUser(dataToSubmit) {
   const request = axios
@@ -37,4 +41,30 @@ export function auth() {
 		type: AUTH_USER,
 		payload: request,
 	}
+}
+
+let nextId = 2;
+export const addPosting = (title, description) => {
+  return {
+      type: ADD_POSTING,
+      post: {
+          id: nextId++,
+          title,
+          description
+      }
+  };
+}
+
+export const editPosting = (id) => {
+  return {
+      type: EDIT_POSTING,
+      id
+  }
+}
+
+export const deletePosting = (id) => {
+  return {
+      type: DELETE_POSTING,
+      id
+  }
 }
