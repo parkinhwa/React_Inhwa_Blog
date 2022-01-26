@@ -164,7 +164,7 @@ input[id="trigger"]:checked ~ .sidebar {
 input[id="trigger"]:checked + label[for="trigger"] {
   left: 360px;
 }
-#about {
+#about, #blog, #contact {
   margin-left:3%;
 }
 
