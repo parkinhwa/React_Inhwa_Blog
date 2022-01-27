@@ -24,14 +24,5 @@ ReactDOM.render(
   >
     <App />
   </Provider>,
-// const middleware = applyMiddleware(thunkMiddleware);
-// const store = createStore(Reducer, composeWithDevTools(middleware));
-
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <BrowserRouter>
-//       <App />
-//     </BrowserRouter>
-//   </Provider>,
   document.getElementById("root")
 );

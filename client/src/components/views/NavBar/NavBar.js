@@ -4,9 +4,6 @@ import { useNavigate } from "react-router-dom";
 import "../../../css/NavBar.css";
 import BlogPage from "../BlogPage/BlogPage";
 
-import { MdModeEdit } from "react-icons/md";
-import { MdDelete } from "react-icons/md";
-
 function NavBar(post, date) {
   const navigate = useNavigate();
   const onClickLogin = () => {
@@ -84,14 +81,7 @@ function NavBar(post, date) {
       <hr class="m-0" />
       <section class="resume-section" id="blog">
         <div class="resume-section-content">
-          {/* <h2 className="id">{post.id}</h2>
-          <h2 className="title">{post.title}</h2>
-          <h2 className="date">{date}</h2> */}
-          <h2 className="action edit">
-            <MdModeEdit className="icon" />
-            <MdDelete className="icon" />
-            {/* <MdDelete className="icon" onClick={onClick}/> */}
-          </h2>
+          <BlogPage />
         </div>
       </section>
       <hr class="m-0" />
