@@ -1,2 +1,4 @@
 # React_Inhwa_Blog
-react redux mongodb
+react 
+redux 
+mongodb
