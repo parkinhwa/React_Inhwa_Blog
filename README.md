@@ -1,5 +1,5 @@
-# React_Inhwa_Blog
-react, redux, mongodb를 활용해서 만드는 블로그:sparkles:
+# React_Inhwa_Blog:sparkles:
+react, redux, mongodb를 활용해서 만드는 블로그
 
 ## > About Me
 ![image](https://user-images.githubusercontent.com/65644486/152782532-333d78f2-13d0-4a89-82eb-3c8daa236a34.png)
