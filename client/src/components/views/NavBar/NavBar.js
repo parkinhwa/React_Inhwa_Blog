@@ -81,32 +81,133 @@ function NavBar(post, date) {
       <hr class="m-0" />
       <section class="resume-section" id="blog">
         <div class="resume-section-content">
-          <BlogPage />
+          <table className="table table-striped table-bordered" id="head_table">
+            <thead>
+              <tr>
+                <th style={{ width: "10%" }}>글 번호</th>
+                <th style={{ width: "40%" }}>제목 </th>
+                <th style={{ width: "15%" }}>작성자 </th>
+                <th style={{ width: "35%" }}>작성일 </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    컴포넌트
+                  </a>
+                </td>
+                <td> INHWA </td>
+                <td> 2022.02.09 </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    커링과 조합
+                  </a>
+                </td>
+                <td> park </td>
+                <td> 2022.02.09 </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    하이어오더
+                  </a>
+                </td>
+                <td> inh </td>
+                <td> 2022.02.10 </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    컨텍스트
+                  </a>
+                </td>
+                <td> 박인화 </td>
+                <td> 2022.02.11 </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>리덕스</a>
+                </td>
+                <td> INHWA </td>
+                <td> 2022.02.13 </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    리덕스와 컨텍스트의 차이
+                  </a>
+                </td>
+                <td> INHWA </td>
+                <td> 2022.02.20 </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    리덕스와 컨텍스트의 차이
+                  </a>
+                </td>
+                <td> INHWA </td>
+                <td> 2022.02.20 </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    리덕스와 컨텍스트의 차이
+                  </a>
+                </td>
+                <td> INHWA </td>
+                <td> 2022.02.20 </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    리덕스와 컨텍스트의 차이
+                  </a>
+                </td>
+                <td> INHWA </td>
+                <td> 2022.02.20 </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <a /* onClick={() => this.readBoard(board.idx)} */>
+                    리덕스와 컨텍스트의 차이
+                  </a>
+                </td>
+                <td> INHWA </td>
+                <td> 2022.02.20 </td>
+              </tr>
+            </tbody>
+          </table>
+          {/* <button class="btn btn-dark">글쓰기</button> */}
         </div>
       </section>
       <hr class="m-0" />
       <section class="resume-section" id="contact">
         <div class="resume-section-content">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="mb-3">Contact</h2>
           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
-              <h3 class="mb-0">University of Colorado Boulder</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">August 2006 - May 2010</span>
-            </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">James Buchanan High School</h3>
-              <div class="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">August 2002 - May 2006</span>
+              <div>
+                If you want to contact me or have any questions, please send me
+                a message by pressing Send Now!
+              </div>
+              <input placeholder="Email"></input>
+              <input placeholder="Name"></input>
+              <input placeholder="Enter your message"></input>
+              <button class="btn btn-dark">Send Now</button>
             </div>
           </div>
         </div>
