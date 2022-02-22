@@ -59,9 +59,6 @@ hr {
   transform: 0.5s;
 }
 
-/* .menu:hover a {
-  opacity: 0.3;
-} */
 
 .menu_item:hover a {
   opacity: 1;
@@ -200,7 +197,10 @@ input[id="trigger"]:checked + label[for="trigger"] {
   float: right;
   background-color: black;
 }
-
+.page {
+  
+  text-align: center;
+}
 
 
 
