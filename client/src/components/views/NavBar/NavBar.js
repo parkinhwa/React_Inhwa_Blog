@@ -191,6 +191,38 @@ function NavBar(post, date) {
               </tr>
             </tbody>
           </table>
+          <div class = "page">
+            <nav class="page_number" aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#blog">
+                    1
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#blog">
+                    2
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#blog">
+                    3
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#blog" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+                <li><button class="btn btn-dark">글쓰기</button></li>
+              </ul>
+            </nav>
+          </div>
           {/* <button class="btn btn-dark">글쓰기</button> */}
         </div>
       </section>
