@@ -236,9 +236,9 @@ function NavBar(post, date) {
                 If you want to contact me or have any questions, please send me
                 a message by pressing Send Now!
               </div>
-              <input placeholder="Email"></input>
-              <input placeholder="Name"></input>
-              <input placeholder="Enter your message"></input>
+              <input type="email" placeholder="Email"></input>
+              <input type="name" placeholder="Name"></input>
+              <textarea type="message" placeholder="Enter your message"></textarea>
               <button class="btn btn-dark">Send Now</button>
             </div>
           </div>
