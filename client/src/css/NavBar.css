@@ -202,7 +202,34 @@ input[id="trigger"]:checked + label[for="trigger"] {
   text-align: center;
 }
 
+input[type=email],
+input[type=name],
+textarea[type=message]{
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding-left: 40px;
+  margin-top: 15px;
+}
 
+input[type=email]{
+  background: #fff url(../img/icon-email.png) no-repeat center left 10px;
+}
+input[type=name]{
+  background: #fff url(../img/icon-name.png) no-repeat center left 10px;
+}
+textarea[type=message]{
+  background: #fff url(../img/icon-message.png) no-repeat top 10px left 10px;
+  height: 300px;
+}
+
+input[type=email]:focus::placeholder,
+input[type=name]:focus::placeholder,
+textarea[type=message]:focus::placeholder{
+  visibility: hidden;
+}
 
 /*!
 * Start Bootstrap - Resume v7.0.4 (https://startbootstrap.com/theme/resume)
